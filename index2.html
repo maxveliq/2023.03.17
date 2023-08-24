@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .lol {
+            margin: 0 auto;
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border: 5px solid black;
+            border-radius: 200px;
+            overflow: hidden;
+            transition: .2s;
+            margin-top: calc(20% - 100px);
+        }
+
+        .lol1 {
+            background-color: red;
+            width: 10px;
+            height: 103px;
+            margin: 0 auto;
+            animation: rot 10s ease-in-out infinite;
+            transform-origin: bottom;
+            transition: .2s;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px ;
+        }
+
+        .lol:hover {
+            background-color: red;
+        }
+
+        .lol:hover .lol1 {
+            background-color: black;
+        }
+
+        @keyframes rot {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }}
+
+        @keyframes head {
+            0%{
+                background-color: rgb(0, 0, 63);
+            }
+            10%{
+                background-color: rgb(0, 3, 175);
+            }
+            20%{
+                background-color: blue;
+            }
+            30%{
+                background-color: rgb(33, 33, 255);
+            }
+            50%{
+                background-color: rgb(218, 141, 0);
+            }
+            70%{
+                background-color: rgb(160, 104, 0);
+            }
+            90%{
+                background-color: rgb(0, 0, 24);
+            }
+            100%{
+                background-color: rgb(0, 0, 63);
+            }
+        }
+        body {
+            animation: head 10s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="lol">
+        <div class="lol1"></div>
+    </div>
+</body>
+</html>

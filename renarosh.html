@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            position: fixed;
+            display: flex;
+            width: 100%;
+            height: 80px;
+            background-color: whitesmoke;
+            justify-content: space-between;
+        }
+        .header-element {
+            background-color: none;
+            width: 30%;
+            height: 100%;
+        }
+        .header-element:nth-child(1) img {
+            width: 80px;
+            margin: 10px 20px;
+        }
+        .header-element:nth-child(2) {
+            background-color: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .header-element:nth-child(2) a {
+            color: whitesmoke;
+            text-decoration: none;
+            font-family: Helvetica, sans-serif; 
+            font-size: 26px;
+            text-align: center;
+            background-color: crimson;
+            display: inline;
+            padding: 5px;
+            border-radius: 20%;
+        }
+        .header-element:nth-child(3) {
+            background-color: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .header-element:nth-child(3) img {
+            background-color: none;
+            width: 50px;
+            margin-left: 20px;
+        }
+        .product {
+            background-color: none;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 80px;
+        }
+        .product-container {
+            background-color: #fff;
+            position: relative;
+            width: 90%;
+            justify-content:space-between;
+        }
+        .product-container img {
+            height: 400px;
+            float: left;
+        }
+        .product-container h1 {
+            font-size: 40px;
+            text-align: center;
+            padding: 30px;
+            padding-bottom: 10px;
+        }
+        .product-container p {
+            color: grey;
+            text-align: center;
+            font-size: 25px;
+        }
+        .product-container div {
+            margin: 30px;
+        }
+        .product-container div .p {
+            margin:30px;
+            font-size: 20px;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-element">
+            <img src="https://renarosh.com/assets/e223ea2c/assets/frontend/main/img/logo.svg">
+        </div>
+        <div class="header-element">
+            <a href="">Menu</a>
+            <a href="">Contact <br>Me</a>
+            <a href="">Products</a>
+        </div>
+        <div class="header-element">
+            <img src="https://th.bing.com/th/id/R.c2567e63b1783f9b7114471831bcdead?rik=d%2f7bFWgelT%2fnZw&riu=http%3a%2f%2fgetdrawings.com%2ffree-icon%2ficon-ig-54.png&ehk=HkrFJDS1f%2bF%2fyll6VqDtwx5G7SJlxWG%2bkrZkX2xGUEg%3d&risl=&pid=ImgRaw&r=0">
+            <img src="https://www.freeiconspng.com/uploads/facebook-logo-png--impending-10.png" alt="">
+            <img src="https://www.logolynx.com/images/logolynx/78/78f67d3825088b7e38c08d048f60ffb9.png" alt="">
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="product-container">
+            <img src="https://u.makeup.com.ua/x/xl/xl4jsp9yoevk.jpg">
+            <h1>Multipurpose cream</h1>
+            <p>Rena Rosh Multi Purpose Mud Cream</p>
+            <div> <p class="p">- based on the healing properties of the components extracted from the Dead Sea;<br>
+                - includes a perfectly balanced complex of vegetable oils;<br>
+                - enriched with natural extracts that perfectly nourish the skin;<br>
+                - contains valuable trace elements, as well as vitamins A, B, E, D;<br>
+                - known for antibacterial and anti-inflammatory actions;<br>
+                - deeply moisturizes the skin, taking care of it as delicately as possible;<br>
+                - gives the skin perfect softness;<br>
+                - pleases with the delicate consistency and delicate aroma of tea tree.</p> </div>
+           
+        </div>
+    </div>
+
+<script></script>
+</body>
+</html>

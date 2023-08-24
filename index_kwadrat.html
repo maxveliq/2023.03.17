@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .kwadrat {
+            background-color: black;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            animation: anim 7s infinite linear ;
+            transition: 1s;
+        }
+
+        @keyframes anim {
+            0% {
+                top: 0px;
+                left: 0;
+                rotate: 0deg;
+            }
+            25% {
+                top: calc(100% - 100px);
+                left: calc(100% - 100px);
+            }
+            50% {
+                top: calc(100% - 100px);
+                left: 0;
+            }
+            75% {
+                top: 0;
+                left: calc(100% - 100px);
+            }
+            100% {
+                top: 0px;
+                left: 0;
+                rotate: 1440deg;
+            }
+        }
+
+        .coolo {
+            background-color: red;
+            scale: 1.1;
+        }
+
+        .button {
+            background-color: white;
+            border: 1px black solid;
+            padding: 20px;
+            position: absolute;
+            top: calc(90% - 50px);
+            left: calc(50% - 50px);
+            transition: .3s ease;
+            z-index: 1;
+        }
+        .button:hover div {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <button onmouseover="hoverOn()" onmouseout="hoverOff()" class="button">hover me!</button>
+    <div id="kwadrat" class="kwadrat"></div>
+    
+    <script src="index_kwadrat.js"></script>
+</body>
+
+</html>
